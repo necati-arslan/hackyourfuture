@@ -1,0 +1,547 @@
+/* Common styles */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Slab', serif;
+}
+
+p{
+    line-height: 1.5;
+
+}
+
+
+
+
+/* Navbar*/
+
+.NavbarWrapper{
+    padding: 0px;
+    background-color: white;
+    width: 100%;
+
+}
+
+.NavbarWrapper > .navTopBar{
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#f3953e;
+    
+}
+
+.navTopBar > .leftColumn {
+
+    display: flex;
+    align-items: center;
+
+}
+
+.navTopBar > .leftColumn > .icon i {
+
+    font-size: 20px;
+    padding-right: 5px;
+
+}
+
+.navTopBar > .rightColumn {
+
+    display: flex;
+    align-items: center;
+
+}
+
+.navTopBar > .rightColumn > .icon i {
+
+    font-size: 20px;
+    padding-right: 5px;
+    color: black;
+
+}
+
+
+.NavbarWrapper > .navbarMain{
+    height: 100px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.navbarMain > .logo{
+    flex: 50%;
+    padding-left: 20px;
+}
+
+.navbarMain > .logo img{
+    height: 80px;
+    width: auto;
+}
+
+.navbarMain > .menu{
+    flex: 50%;
+}
+
+.navbarMain > .menu > .linksWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 30px;
+}
+
+
+.navbarMain > .menu > .linksWrapper > .nav-link {
+    width: 90px;
+}
+
+.navbarMain > .menu > .linksWrapper > .nav-link a{
+    text-decoration: none;
+    transition: 0.5s;
+    color: #404042;
+}
+
+
+.navbarMain > .menu > .linksWrapper > .nav-link a:hover{
+    letter-spacing: 2px;
+    color: #f3953e;
+}
+
+
+/*Home Screen*/
+
+.HomeScreen{
+    background-image: url(./img/hero.png);
+    padding: 100px;
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.HomeScreen > .homeText{
+    padding-bottom: 40px;
+    color: #f3953e;
+    text-shadow: black 2px 0 1px;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.HomeScreen span{
+    
+    padding: 40px 3px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 4px;
+    font-size: 19px;
+}
+
+/*Home Screen*/
+
+/*Features*/
+
+.Features{
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#f7f7f7;
+
+
+}
+
+
+.Features > .featuresWrapper{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.Features > .featuresWrapper > .column{
+    padding: 40px;
+    text-align: center;
+    transition: 1s;
+    cursor: pointer ;
+    
+}
+
+.Features > .featuresWrapper > .column:hover i{
+   color: #f3953e;
+   cursor: pointer;
+}
+
+.Features > .featuresWrapper > .column :nth-child(1){
+
+    font-size: 30px;
+    transition: 1s;
+    
+
+}
+
+.Features > .featuresWrapper > .column :nth-child(2){
+
+    padding: 20px;
+    transition: 1s;
+
+}
+
+.Features > .featuresWrapper > .column :nth-child(2):hover{
+    letter-spacing: 2px;
+}
+
+/*Features*/
+
+
+/*RestaurantMenu*/
+
+.RestaurantMenu{
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    background-color: #efefef;
+
+}
+
+.RestaurantMenu > .restaurantMenuWrapper{
+    width: 1000px;
+}
+
+.RestaurantMenu > .restaurantMenuWrapper > .content {
+    position: relative;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.RestaurantMenu > .restaurantMenuWrapper > .content > .text :nth-child(1) {
+    padding-top: 40px;
+    
+}
+
+.RestaurantMenu > .restaurantMenuWrapper > .content > .text p {
+    padding: 20px 0px;
+    
+}
+
+.RestaurantMenu > .restaurantMenuWrapper > .content > .text h3::after {
+    content: '_________';
+    display: block;
+    color: #f3953e;
+    padding-bottom: 10px;
+    
+}
+
+.RestaurantMenu > .restaurantMenuWrapper > .content > .menuLogo{
+
+    position: absolute;
+    left: 50%;
+    /* top: 50%; */
+    transform: translate(-50%, -67%);
+
+}
+
+.RestaurantMenu > .restaurantMenuWrapper > .content > .menuLogo img{
+    
+    width:100px;
+    height: auto;
+    border-radius: 50%;
+    border: 1px solid #f3953e;
+}
+
+
+
+
+/*RestaurantMenu*/
+
+/*About*/
+
+.About{
+    position: relative;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.About > .aboutWrapper{
+    width:1000px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.About > .aboutWrapper > .image{
+    flex: 50%;
+}
+
+.About > .aboutWrapper > .image img{
+    width: 100%;
+    border-radius: 4px;
+    border-right: 4px solid #f3953e;
+}
+
+ #certificate div{
+     float: left;
+     padding: 10px;
+     margin-right: 2px;   
+}
+
+#certificate :nth-child(2){
+    background-color: #f3953e;
+    border-radius: 4px;
+}
+
+
+#certificate :nth-child(3){
+    background-color: #f3953e;
+    border-radius: 4px;
+}
+
+#certificate :nth-child(4){
+    background-color: #f3953e;
+    border-radius: 4px;
+}
+
+.About > .aboutWrapper > .text{
+    flex: 50%;
+    padding: 10px 20px;
+}
+
+.About > .aboutWrapper > .text > #floatImg{
+    float: right;
+    margin-top: 6px;
+    margin-left: 5px;
+}
+
+#clearFloat{
+    clear: both;
+}
+
+
+.About > .aboutWrapper > .text h3{
+    padding-bottom: 20px;
+}
+
+
+.About > .aboutWrapper > .text h3::after {
+    content: '_________';
+    display: block;
+    color: #f3953e;
+    padding-bottom: 10px;
+    
+}
+
+
+/*About*/
+
+
+
+
+/*Contact*/
+
+.Contact{
+    background-color:#efefef ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 40px 0px;
+}
+
+.Contact > .contactWrapper{
+
+    width: 1000px;
+    border-radius: 4px;
+    border:1px solid white;
+    padding: 20px 10px;
+    background-color: white;
+
+
+}
+
+.contactWrapper > .header  h3::after {
+    content: '_________';
+    display: block;
+    color: #f3953e;
+    padding-bottom: 10px;
+    
+}
+
+.contactWrapper  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+.contactWrapper input[type=submit]{
+
+  background-color: #f3953e;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+
+.contactWrapper input[type=submit]:hover{
+
+  background-color: #c0742d;
+
+}
+
+/*Contact*/
+
+
+
+/*Footer*/
+
+.Footer{
+
+    background-color: #11122b;
+    color: #cbcbcb;
+    font-family: "Ubuntu Condensed", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -4px;
+    padding-top: 40px;
+
+}
+
+.Footer > .footerLogo img{
+
+    width: 150px;
+    height: auto;
+    opacity: 0.5;
+    border-radius: 50%;
+
+}
+
+.Footer > .footerPhone{
+
+    padding: 40px;
+
+}
+
+.footerPhone table { 
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .footerPhone td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  .footerPhone  tr:nth-child(even) {
+    background-color: #a7a4a4;
+    color:black ;
+  }
+
+
+
+.Footer > .footerSocial{
+
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+
+}
+
+.Footer > .footerSocial a {
+    font-size: 1.5em;
+    color: #cbcbcb;
+    transition: 0.5s;
+}
+
+.Footer > .footerSocial a:hover {
+    color: #cea135;
+}
+
+
+/*Footer*/
+
+
+
+/*responsove*/
+
+@media (max-width: 615px) {
+
+    .NavbarWrapper > .navbarMain{
+        flex-direction: column;
+    }
+
+    .navbarMain > .menu > .linksWrapper > .nav-link {
+        width: 60px;
+    }
+
+    .HomeScreen{
+      
+        padding: 70px;
+        
+       
+    }
+
+    .HomeScreen span{
+    
+       display: none;
+    }
+
+    .Features{
+        height: 100%;
+    }
+    .Features > .featuresWrapper{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    
+    }
+
+    .About{
+      height: 100%;
+    
+    }
+    
+    .About > .aboutWrapper{
+        width:100%;
+        flex-direction: column;
+        
+    }
+
+  
+    
+    .Contact > .contactWrapper{
+    
+        width: 100%;
+       
+    }
+
+    .Footer{
+        padding-bottom: 40px;
+    }
+}
+/*responsove*/
